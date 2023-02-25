@@ -8,7 +8,17 @@ import Events from '@/src/components/events/Events'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({title,data}) {
+interface Props {
+  title: string;
+  data: {
+  id: number;
+  title: string;
+  image: string;
+  }[];
+  }
+  
+export default function Home({ title, data }: Props) {
+  
   return (
     <>
       <Head>

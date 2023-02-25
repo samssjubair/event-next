@@ -2,8 +2,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Page = ({data}) => {
-    return (
+interface Props {
+    data: {
+      id: string;
+      title: string;
+      image: string;
+      description: string;
+    }[];
+  }
+  
+const Page: React.FC<Props> = ({ data }) => {    return (
         <div>
             welcome to event next
             

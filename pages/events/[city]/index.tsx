@@ -2,7 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const EventCity = ({city,data}) => {
+type EventCityProps = {
+    city: string,
+    data: {
+    id: number,
+    image: string,
+    title: string,
+    city: string,
+    description: string
+    }[]
+    }
+    
+const EventCity: React.FC<EventCityProps> = ({city, data}) => {
     return (
         <div>
             Welcome to {city} Mofos!
@@ -45,7 +56,7 @@ export async function getStaticPaths(){
     }
 }
 
-export async function getStaticProps(context){
+export async function getStaticProps(context: any){
     // console.log(context);
     const params=context.params.city;
     // console.log(params)
