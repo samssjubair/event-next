@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 
-interface EventData {
+
+  interface EventData {
     id: string;
     title: string;
     city: string;
