@@ -7,12 +7,12 @@ interface EventData {
     title: string;
     image: string;
     description: string;
-    }
+}
     
-    interface Props {
+interface Props {
     data: EventData[];
-    }
-    
+}
+
 const Events: React.FC<Props> = ({ data }) => {
     return (
         <main className='my-2 mx-3'>

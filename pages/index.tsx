@@ -15,7 +15,7 @@ interface Props {
   title: string;
   image: string;
   }[];
-  }
+}
   
 export default function Home({ title, data }: Props) {
   
