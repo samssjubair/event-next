@@ -2,7 +2,11 @@ import Footer from '@/src/components/footer/Footer';
 import Header from '@/src/components/header/Header';
 import React from 'react';
 
-const MainLayout: React.FC<{}> = ({children}) => {
+interface MainLayoutProps {
+  children: React.ReactNode;
+}
+
+const MainLayout: React.FC<MainLayoutProps> = ({children}) => {
     return (
         <>
             <Header/>
