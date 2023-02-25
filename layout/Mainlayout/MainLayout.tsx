@@ -1,4 +1,4 @@
-import Footer from '@/src/components/footer/footer';
+import Footer from '@/src/components/footer/Footer';
 import Header from '@/src/components/header/Header';
 import React from 'react';
 
