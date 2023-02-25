@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 interface EventData {
-    id: number;
+    id: string;
     title: string;
     image: string;
     description: string;
