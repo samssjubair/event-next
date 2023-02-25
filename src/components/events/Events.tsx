@@ -2,7 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Events = ({data}) => {
+interface EventData {
+    id: number;
+    title: string;
+    image: string;
+    description: string;
+    }
+    
+    interface Props {
+    data: EventData[];
+    }
+    
+const Events: React.FC<Props> = ({ data }) => {
     return (
         <main className='my-2 mx-3'>
         {
